@@ -3,59 +3,150 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zhouzhuo Guo | 个人网站</title>
-  <meta name="description" content="个人简介、项目与联系方式。" />
-  <meta property="og:title" content="你的名字 | 个人网站" />
-  <meta property="og:description" content="个人简介、项目与联系方式。" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/og.png" />
-  <link rel="icon" href="assets/favicon.ico" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>你的名字 | 个人主页</title>
+  <meta name="description" content="个人主页：简介、研究方向、教育经历、荣誉、论文与联系方式。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="你的名字 | 个人主页">
+  <meta property="og:description" content="个人主页：简介、研究方向、教育经历、荣誉、论文与联系方式。">
+  <meta property="og:image" content="assets/og.png">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="container">
-    <h1>Zhouzhuo Guo</h1>
-    <nav>
-      <a href="#about">about</a>
-      <a href="#projects">projects</a>
-      <a href="#blog">blog</a>
-      <a href="#contact">contact me</a>
+  <!-- 顶部导航 -->
+  <header class="topnav">
+    <nav class="navwrap">
+      <a class="brand" href="#home">Homepage</a>
+      <a href="#education">Educations</a>
+      <a href="#honors">Honors and Awards</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About Me</a>
     </nav>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>一句话定位：我做什么、擅长什么、正在寻找什么机会。</p>
-    </section>
+  <main id="home" class="page">
+    <!-- 左侧栏 -->
+    <aside class="sidebar">
+      <img src="assets/photo.jpg" alt="你的头像" class="avatar" width="220" height="220">
+      <h1 class="name">你的名字</h1>
+      <div class="subtitle">（你的中文名）</div>
+      <div class="affil">Your University / Lab<br>City, State, US</div>
 
-    <section id="projects">
-      <h2>项目</h2>
-      <ul class="cards">
-        <li>
-          <h3>项目 A</h3>
-          <p>一句话亮点 + 链接</p>
-        </li>
-        <li>
-          <h3>项目 B</h3>
-          <p>一句话亮点 + 链接</p>
-        </li>
+      <ul class="links">
+        <li>📍 <span>Durham, NC, US</span></li>
+        <li>✉️ <a href="mailto:you@example.com">Email</a></li>
+        <li>🐙 <a href="https://github.com/zhouzhuoguo" target="_blank" rel="noopener">Github</a></li>
+        <li>🎓 <a href="#" target="_blank" rel="noopener">Google Scholar</a></li>
+        <!-- 需要其它链接就照此添加 -->
       </ul>
-    </section>
 
-    <section id="blog">
-      <h2>博客</h2>
-      <p>后续可接入静态博客或外部链接。</p>
-    </section>
+      <div class="quicknav">
+        <a href="#tracks">Research Tracks</a>
+        <a href="#education">Educations</a>
+        <a href="#honors">Honors</a>
+        <a href="#publications">Publications</a>
+      </div>
+    </aside>
 
-    <section id="contact">
-      <h2>Contact me</h2>
-      <p>邮箱：zhouzhuoguo@gmail.com</p>
+    <!-- 右侧正文 -->
+    <section class="content">
+      <section class="card intro">
+        <p>
+          我目前在 <b>（你的学校/机构）</b> 从事 <b>（你的研究方向）</b>。研究兴趣包括
+          <b>AI chips</b>、<b>Transformers/扩散模型硬件优化</b>、<b>系统部署</b> 等。
+          这里放 2–3 句简介：你在做什么、过往亮点、当前在找什么（如实习/PhD/合作）。
+        </p>
+      </section>
+
+      <section id="tracks" class="card">
+        <h2>🧪 Research Tracks</h2>
+
+        <h3>🚀 Chip Design for AI Acceleration</h3>
+        <p>面向主流 AI 模型（Diffusion、Transformers、CNN/Point 等）的定制芯片与加速器设计。</p>
+        <ul class="bullets">
+          <li>跨层优化：从算法 → 架构 → 电路</li>
+          <li>能耗/带宽/存储建模与权衡</li>
+          <li>例：本项目在相同精度下实现 <b>×N</b> 的吞吐提升与 <b>×M</b> 的能效提升</li>
+        </ul>
+
+        <h3>🌐 Online AI Deployment Systems</h3>
+        <p>软硬件协同的在线推理系统：FPGA/自研集群/云端平台。</p>
+        <ul class="bullets">
+          <li>硬件友好型算法与编译映射（如 MLIR → 指令）</li>
+          <li>调度与多任务分配</li>
+        </ul>
+
+        <h3>⚡ Impact</h3>
+        <p>目标是在主流 AI 任务上实现 <b>10×–1000×</b> 的成本/功耗优势，同时保持同等精度与速度。</p>
+      </section>
+
+      <section id="education" class="card">
+        <h2>📘 Educations</h2>
+        <ul class="timeline">
+          <li>
+            <div class="time">2025 – now</div>
+            <div class="desc"><b>你的学位</b>, Your University — 方向（导师/实验室可写）</div>
+          </li>
+          <li>
+            <div class="time">2021 – 2025</div>
+            <div class="desc"><b>B.S. in Communication Engineering</b>, Beijing Jiaotong University</div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="honors" class="card">
+        <h2>🏅 Honors and Awards</h2>
+        <ul class="list">
+          <li><span class="time">2024</span> 奖项 A（主办方/排名/金额可写）</li>
+          <li><span class="time">2023</span> 奖项 B</li>
+          <li><span class="time">2022</span> 奖项 C</li>
+        </ul>
+      </section>
+
+      <section id="publications" class="card">
+        <h2>📄 Publications</h2>
+        <ol class="pubs">
+          <li><b>你的名字</b>, 合作者. 论文标题. 会议/期刊, 年份. <a href="#">PDF</a> · <a href="#">Code</a></li>
+          <li>……</li>
+        </ol>
+      </section>
+
+      <section id="projects" class="card">
+        <h2>🧩 Projects</h2>
+        <ul class="cards">
+          <li>
+            <h3>项目 A</h3>
+            <p>一句话亮点（如吞吐/延迟/能效提升/数据规模）。</p>
+            <p><a href="#">代码/演示</a></p>
+          </li>
+          <li>
+            <h3>项目 B</h3>
+            <p>一句话亮点。</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>🛠 Skills</h2>
+        <p><b>硬件</b>：Verilog/VHDL、FPGA、HLS、仿真；<b>软件</b>：Python、NumPy、PyTorch；<b>工具</b>：Git、LaTeX 等。</p>
+      </section>
+
+      <section id="about" class="card">
+        <h2>🙂 About Me</h2>
+        <p>1–2 段更个人化的介绍（学习/兴趣/生活）。</p>
+      </section>
+
+      <footer class="footer">
+        © <span id="year"></span> 你的名字 · <a href="mailto:you@example.com">you@example.com</a>
+      </footer>
     </section>
   </main>
 
-  <footer class="container">
-    <small>© 2025 你的名字 • <a href="sitemap.xml">sitemap</a></small>
-  </footer>
+  <script>
+    // 年份自动更新
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
