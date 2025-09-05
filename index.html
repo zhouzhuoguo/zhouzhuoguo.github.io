@@ -60,12 +60,18 @@
         <h2>Current Research</h2>
 
         <h3>Chip performance evaluation modeling</h3>
-        <p>Simulation of mainstream AI models(Diffusion, PTV2, VGGT) on customized chip</p>
-        <ul class="bullets">
-          <li>跨层优化：从算法 → 架构 → 电路</li>
-          <li>能耗/带宽/存储建模与权衡</li>
-          <li>例：本项目在相同精度下实现 <b>×N</b> 的吞吐提升与 <b>×M</b> 的能效提升</li>
+        <p>Simulation of mainstream AI models(Diffusion, Transformer, CNNs) on customized chip</p>
+        <ul class="feature-list">
+          <li>
+            <span class="label">Accurate</span>
+            <ul class="subpoints">
+              <li>Behaves like hardware on each clock rising edge</li>
+              <li>Instantaneous EMA, utilization, power, etc.</li>
+            </ul>
+          </li>
+          <!-- 其他项同理 -->
         </ul>
+
 
         <h3>🌐 Online AI Deployment Systems</h3>
         <p>软硬件协同的在线推理系统：FPGA/自研集群/云端平台。</p>
