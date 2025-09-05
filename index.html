@@ -87,28 +87,45 @@
         </ul>
 
 
-        <h3>🌐 Online AI Deployment Systems</h3>
-        <p>软硬件协同的在线推理系统：FPGA/自研集群/云端平台。</p>
-        <ul class="bullets">
-          <li>硬件友好型算法与编译映射（如 MLIR → 指令）</li>
-          <li>调度与多任务分配</li>
-        </ul>
-
-        <h3>⚡ Impact</h3>
-        <p>目标是在主流 AI 任务上实现 <b>10×–1000×</b> 的成本/功耗优势，同时保持同等精度与速度。</p>
-      </section>
-
-      <section id="education" class="card">
-        <h2>📘 Educations</h2>
-        <ul class="timeline">
+        <h3>💼 Latest progress</h3>
+        <ul class="feature-list">
           <li>
-            <div class="time">2025 – now</div>
-            <div class="desc"><b>你的学位</b>, Your University — 方向（导师/实验室可写）</div>
+            <span class="label"><b> Decoupled:</b></span>
+            <ul class="subpoints">
+              <li>Decoupled the model into the main model, editable HW_Setting and ARCH. It is convenient to simulate different network models.</li>
+            </ul>
           </li>
           <li>
-            <div class="time">2021 – 2025</div>
-            <div class="desc"><b>B.S. in Communication Engineering</b>, Beijing Jiaotong University</div>
+            <span class="label"><b>Runtime:</b></span>
+            <ul class="subpoints">
+              <li>Take the diffusion model as an example, from 50h+ to <10min</li>
+            </ul>
           </li>
+          <li>
+            <span class="label"><b>Dataflow redesigned:</b></span>
+            <ul class="subpoints">
+              <li>Now this model can support cross-layer routing & multi-source inputs.</li>
+            </ul>
+          </li>
+          <li>
+            <span class="label"><b>Process-aware HW model:</b></span>
+            <ul class="subpoints">
+              <li>The chip manufacturing process can be configured. Besides, runtime, energy, power, off-chip energy and access count can be reported</li>
+            </ul>
+          </li>
+          <li>
+            <span class="label"><b>Bit-width parameter:</b></span>
+            <ul class="subpoints">
+              <li>The data bit width is editable</li>
+            </ul>
+          </li>
+          <li>
+            <span class="label"><b>Local_attention module:</b></span>
+            <ul class="subpoints">
+              <li>It can aggregate per-stage metrics and scale for large repeated stages.</li>
+            </ul>
+          </li>
+          <!-- 其他项同理 -->
         </ul>
       </section>
 
