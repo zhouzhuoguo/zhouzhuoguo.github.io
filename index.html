@@ -52,7 +52,8 @@
     <section class="content">
       <section class="card intro">
         <p>
-          I received my B.S. in Communication Engineering from the School of Electronic and Information Engineering, Beijing Jiaotong University (Haidian, Beijing) in June 2025. Beginning in January 2025, I remotely studied on AI-chip topics with <a href="https://changchun-zhou.github.io/" target="_blank" rel="noopener">Dr. Changchun Zhou</a> (Postdoctoral Researcher). In summer 2025, I worked on-site at Duke University with Dr. Zhou, leading simulation modeling of Diffusion and PTV2 networks under specific hardware configurations.
+          I received my B.S. in Communication Engineering from the School of Electronic and Information Engineering, Beijing Jiaotong University (Haidian, Beijing) in June 2025. Beginning in January 2025, I worked remotely with <a href="https://changchun-zhou.github.io" target="_blank" rel="noopener">Dr. Changchun Zhou</a> on AI-chip projects. In summer 2025, I worked on-site at Duke University with Dr. Zhou, leading simulation modeling of Diffusion and PTV2 networks under specific hardware configurations.
+
         </p>
       </section>
 
@@ -89,59 +90,23 @@
 
         <h3>💼 Latest progress </h3>
         <ul class="feature-list">
-          <li>
-            <span class="label"><b> Decoupled:</b></span>
-            <ul class="subpoints">
-              <li>Decoupled the model into the main model, editable HW_Setting and ARCH. It is convenient to simulate different network models.</li>
-            </ul>
-          </li>
-          <li>
-            <span class="label"><b>Runtime:</b></span>
-            <ul class="subpoints">
-              <li>Take the diffusion model as an example, from 50h+ to <10min</li>
-            </ul>
-          </li>
-          <li>
-            <span class="label"><b>Dataflow redesigned:</b></span>
-            <ul class="subpoints">
-              <li>Now this model can support cross-layer routing & multi-source inputs.</li>
-            </ul>
-          </li>
-          <li>
-            <span class="label"><b>Process-aware HW model:</b></span>
-            <ul class="subpoints">
-              <li>The chip manufacturing process can be configured. Besides, runtime, energy, power, off-chip energy and access count can be reported</li>
-            </ul>
-          </li>
-          <li>
-            <span class="label"><b>Bit-width parameter:</b></span>
-            <ul class="subpoints">
-              <li>The data bit width is editable</li>
-            </ul>
-          </li>
-          <li>
-            <span class="label"><b>Local_attention module:</b></span>
-            <ul class="subpoints">
-              <li>It can aggregate per-stage metrics and scale for large repeated stages.</li>
-            </ul>
-          </li>
+          <ul>
+          <li><b>Decoupled</b>: Separated the model into the main engine with editable <code>HW_Setting</code> and <code>ARCH</code> for easy swap of network models.</li>
+          <li><b>Runtime</b>: Diffusion example reduced from 50h+ to &lt;10min.</li>
+          <li><b>Dataflow</b>: Supports cross-layer routing and multi-source inputs.</li>
+          <li><b>Process-aware</b>: Configurable manufacturing process; reports runtime, energy, power, off-chip energy, and access counts.</li>
+          <li><b>Bit-width</b>: Data bit width is configurable.</li>
+          <li><b>Local attention</b>: Aggregates per-stage metrics and scales for large repeated stages.</li>
+        </ul>
           <!-- 其他项同理 -->
         </ul>
 
-        <h3>⛳️ Future works </h3>
-        <ul class="feature-list">
-          <ul class="subpoints">
-              <li>Further improve the function of the model, such as adding (non) linear module (UFP) and transpose.</li>
-            </ul>
-          <ul class="subpoints">
-              <li>Add and evaluate technique options</li>
-            </ul>
-          <ul class="subpoints">
-              <li>Evaluate more SOTA algorithm model such as Flux, Video Diffusion Models</li>
-            </ul>
-          <ul class="subpoints">
-              <li>Model and explore VGGT.</li>
-            </ul>
+        <h3>⛳️ Future work </h3>
+        <ul>
+          <li>Extend operators (e.g., (non)linear UFP, transpose).</li>
+          <li>Add technique options and evaluate trade-offs.</li>
+          <li>Evaluate more SOTA models (e.g., Flux, Video Diffusion Models).</li>
+          <li>Model and explore VGGT.</li>
         </ul>
         </section>
 
