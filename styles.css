@@ -127,4 +127,15 @@ body {
   .page { grid-template-columns: 1fr; }
   .sidebar { position: relative; top: 0; }
   .avatar { width: 160px; height: 160px; }
+  /* 一级要点 */
+.feature-list { margin: 0; padding-left: 1.2em; }
+.feature-list > li { margin: 12px 0; }
+.feature-list .label { font-weight: 700; }
+
+/* 二级子要点 */
+.feature-list .subpoints {
+  margin: 6px 0 0 1.2em;   /* 与粗体标题的间距、缩进 */
+  list-style: disc;
+}
+.feature-list .subpoints li { margin: 4px 0; }
 }
