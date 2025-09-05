@@ -169,14 +169,21 @@
         <h2>🏅 Honors and Awards</h2>
       <style>
       .awards{list-style:none;margin:0;padding:0}
-      .award{display:flex;gap:12px;align-items:baseline;flex-wrap:nowrap}
-      .award .year{flex:0 0 56px;color:#6b7280} /* 固定宽度，防止正文掉到下面 */
-      .award .desc{flex:1;overflow-wrap:anywhere}
+      .award{display:grid;grid-template-columns:56px 1fr;column-gap:12px;align-items:start}
+      .award .year{color:#6b7280}
+      .award .desc{overflow-wrap:anywhere}
       </style>
-        <ul class="list">
-          <li><span class="time">2024</span> <b>National-level Grant</b>, BJTU Undergraduate Innovation & Entrepreneurship Program — School of Electronic and Information Engineering: <b>1st place</b>; nominated to the <b>18th National Undergraduate Innovation & Entrepreneurship Annual Conference</b> (Paper Track, 2025, pending).</li>
-          <li><span class="time">2024</span> <b>Silver Award</b>, “Challenge Cup” Undergraduate Entrepreneurship Training Project, Beijing Jiaotong University</li>
-        </ul>
+
+      <ul class="awards">
+        <li class="award">
+          <span class="year">2024</span>
+          <span class="desc"><strong>National-level Grant</strong>, BJTU Undergraduate Innovation & Entrepreneurship Program — School of Electronic and Information Engineering: <strong>1st place</strong>; nominated to the <strong>18th National Undergraduate Innovation & Entrepreneurship Annual Conference</strong> (Paper Track, 2025, pending).</span>
+        </li>
+        <li class="award">
+          <span class="year">2024</span>
+          <span class="desc"><strong>Silver Award</strong>, “Challenge Cup” Undergraduate Entrepreneurship Training Project, Beijing Jiaotong University.</span>
+        </li>
+      </ul>
       </section>
 
       <section id="publications" class="card">
