@@ -138,4 +138,18 @@ body {
   list-style: disc;
 }
 .feature-list .subpoints li { margin: 4px 0; }
+  /* 仅调小二级子弹点（li 里面再嵌套的 ul li） */
+li > ul > li {
+  font-size: 0.92em;   /* 0.90–0.96 自行微调 */
+  line-height: 1.55;
+  color: #555;         /* 可选：略浅一点 */
+  margin: 2px 0;
+}
+
+/* （可选）让二级列表与一级标题略开一点距离 */
+li > ul {
+  margin-top: 6px;
+  padding-left: 1.2em; /* 缩进微调 */
+}
+
 }
