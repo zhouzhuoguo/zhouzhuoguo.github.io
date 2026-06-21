@@ -1,246 +1,212 @@
-<!doctype html>
-<html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zhouzhuo Guo | Homepage</title>
-  <meta name="description" content="个人主页：简介、研究方向、教育经历、荣誉、论文与联系方式。">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="你的名字 | 个人主页">
-  <meta property="og:description" content="个人主页：简介、研究方向、教育经历、荣誉、论文与联系方式。">
-  <meta property="og:image" content="assets/og.png">
-  <link rel="icon" href="assets/favicon.ico">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="topnav">
-    <nav class="navwrap">
-      <a class="brand" href="#home">Homepage</a>
-      <a href="#education">Educations</a>
-      <a href="#honors">Honors and Awards</a>
-      <a href="#publications">Publications</a>
-      <a href="#skills">Skills</a>
-      <a href="#about">About Me</a>
-    </nav>
-  </header>
-
-  <main id="home" class="page">
-    <aside class="sidebar">
-      <img src="assets/photo.jpg" alt="你的头像" class="avatar" width="220" height="220">
-      <h1 class="name">Zhouzhuo Guo</h1>
-      <div class="subtitle">（虢周卓）</div>
-      <div class="affil">Beijing Jiaotong University <br>Beijing, China</div>
-
-      <ul class="links">
-        <li>Email: zhouzhuoguo@gmail.com </li>
-        <li><a href="https://github.com/zhouzhuoguo" target="_blank" rel="noopener">Github</a></li>
-      </ul>
-
-      <div class="quicknav">
-        <a href="#tracks">Research Tracks</a>
-        <a href="#education">Educations</a>
-        <a href="#honors">Honors</a>
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zhouzhuo Guo | Homepage</title>
+    <meta name="description" content="Personal homepage: bio, research interests, education, honors, publications and
+  contact.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zhouzhuo Guo | Homepage">
+    <meta property="og:description" content="Personal homepage: bio, research interests, education, honors, publications
+  and contact.">
+    <meta property="og:image" content="assets/og.png">
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topnav">
+      <nav class="navwrap">
+        <a class="brand" href="#home">Homepage</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors and Awards</a>
         <a href="#publications">Publications</a>
-      </div>
-    </aside>
+        <a href="#skills">Skills</a>
+        <a href="#about">About Me</a>
+      </nav>
+    </header>
 
+    <main id="home" class="page">
+      <aside class="sidebar">
+        <img src="assets/photo.jpg" alt="Zhouzhuo Guo" class="avatar" width="220" height="220">
+        <h1 class="name">Zhouzhuo Guo</h1>
+        <div class="subtitle">（虢周卓）</div>
+        <div class="affil">Incoming Ph.D. student<br>University of Massachusetts Amherst</div>
 
-    <section class="content">
-      <section class="card intro">
-        <p>
-          I received my B.S. in Communication Engineering from the School of Electronic and Information Engineering, Beijing Jiaotong University (Haidian, Beijing) in June 2025. My research interest is <b>energy-efficient AI chips</b> for edge computing via cross-layer innovations, spanning from algorithms to architecture and circuit design. Beginning in January 2025, I worked remotely with <a href="https://changchun-zhou.github.io" target="_blank" rel="noopener">Dr. Changchun Zhou</a> (Postdoctoral researcher) on AI chip projects. In summer 2025, I worked on-site at Duke University with Dr. Zhou, leading hardware modeling of Diffusion and PTV2 (PointTransformerV2) networks under different hardware configurations. You can find more information through my <a href="/cv.pdf" target="_blank" rel="noopener">CV</a>.
-
-        </p>
-      </section>
-
-      <section id="tracks" class="card">
-        <h2>Current Research</h2>
-
-        <h3>💻 Chip performance evaluation modeling</h3>
-        <p>Simulation of mainstream AI models(Diffusion, Transformer, CNNs) on Configurable chip
-        <p style="margin:.25rem 0 0;opacity:.85;">
-             If you’d like to learn more about the modeling, please check the <a href="https://github.com/zhouzhuoguo/modeling/raw/main/model.pptx" target="_blank" rel="noopener" download>PPT</a>, the 
-            <a href="https://github.com/zhouzhuoguo/modeling/tree/main/ideal_model" target="_blank" rel="noopener">repository</a> and the introduction <a href="https://github.com/zhouzhuoguo/modeling/tree/main/Introduction video/Introduction video" target="_blank" rel="noopener">videos</a>.
-        </p>
-        <ul class="feature-list">
-          <li>
-            <span class="label"><b>Accurate:</b></span>
-            <ul class="subpoints">
-              <li>Behaves like hardware on each clock rising edge</li>
-              <li>Instantaneous EMA, utilization, power, etc.</li>
-            </ul>
-          </li>
-          <li>
-            <span class="label"><b>Complete:</b></span>
-            <ul class="subpoints">
-              <li>Covers all modules: interfaces, NoC, memory management (allocate, release, conflict)</li>
-              <li>Models real dataflow: on-chip, off-chip, and inter-module communication</li>
-            </ul>
-          </li>
-          <li>
-            <span class="label"><b>Scalable: Speed vs Granularity</b></span>
-            <ul class="subpoints">
-              <li>Cycle-accurate (1 cycle/step): ~ 6 hours</li>
-              <li>Stride mode (100 cycles/step): ~10 minutes (about 15% deviation)</li>
-            </ul>
-          </li>
+        <ul class="links">
+          <li>Email: zhouzhuoguo@gmail.com </li>
+          <li><a href="https://github.com/zhouzhuoguo" target="_blank" rel="noopener">Github</a></li>
         </ul>
 
-        <h3>💼 Latest progress </h3>
-        <ul class="feature-list">
+        <div class="quicknav">
+          <a href="#tracks">Research Interests</a>
+          <a href="#education">Education</a>
+          <a href="#honors">Honors</a>
+          <a href="#publications">Publications</a>
+        </div>
+      </aside>
+
+
+      <section class="content">
+        <section class="card intro">
+          <p>
+            I received my B.S. in Communication Engineering from the School of Electronic and Information
+            Engineering, Beijing Jiaotong University (Beijing) in June 2025. I am an incoming
+            <b>Ph.D. student in Electrical and Computer Engineering</b> at the
+            <b>University of Massachusetts Amherst</b> (Fall 2026), where I will be advised by
+            <b>Prof. Jun Yao</b>. My research interest is <b>energy-harvesting devices and self-powered
+            electronic systems</b> for sustainable, low-power sensing. You can find more information
+            through my <a href="/cv.pdf" target="_blank" rel="noopener">CV</a>.
+          </p>
+        </section>
+
+        <section id="tracks" class="card">
+          <h2>Research Interests</h2>
+
+          <h3>⚡ Energy-Harvesting Devices &amp; Self-Powered Systems</h3>
           <ul>
-          <li><b>Decoupled</b>: Separated the model into the main engine with editable HW_Setting and ARCH for easy swap of network models.</li>
-          <li><b>Runtime</b>: Diffusion example reduced from 50h+ to &lt;10min.</li>
-          <li><b>Dataflow</b>: Supports cross-layer routing and multi-source inputs.</li>
-          <li><b>Process-aware</b>: Configurable manufacturing process; reports runtime, energy, power, off-chip energy, and access counts.</li>
-          <li><b>Bit-width</b>: Data bit width is configurable.</li>
-          <li><b>Local attention</b>: Aggregates per-stage metrics and scales for large repeated stages.</li>
-        </ul>
-        </ul>
+            <li>Harvesting clean energy from ubiquitous natural sources (e.g., ambient humidity and moisture).</li>
+            <li>Integration strategies that make harvested energy easy to use in electronic devices.</li>
+          </ul>
 
-        <h3>⛳️ Future work </h3>
-        <ul>
-          <li>Extend operators (e.g., (non)linear UFP, transpose).</li>
-          <li>Add technique options and evaluate trade-offs.</li>
-          <li>Evaluate more SOTA models (e.g., Flux, Video Diffusion Models).</li>
-          <li>Model and explore VGGT.</li>
+          <h3>🔌 Circuit &amp; System Integration for Sensing</h3>
+          <ul>
+            <li>Low-power circuit/system design and signal processing for self-powered sensing.</li>
+            <li>Wearable platforms for health monitoring (e.g., physiological signals).</li>
+          </ul>
+
+          <h3>🌱 Sustainable (Green) Electronic Materials</h3>
+          <ul>
+            <li>Renewable, environmentally friendly materials and device fabrication to reduce electronic waste.</li>
+          </ul>
+        </section>
+
+        <section id="previous-research" class="card">
+          <h2>Previous Research</h2>
+          <h3>🚗 Virtualized Platform-Based 5G Network Planning and Design (Graduation Project)</h3>
+          <ul>
+            <li>Leveraged the Lingte 5G virtual simulation platform and proposed an end-to-end network-planning
+  framework for cross-regional connected-vehicle scenarios.</li>
+          </ul>
+
+          <h3>📡 Continuous Aperture MIMO for Electromagnetic Information Theory</h3>
+          <ul>
+            <li><b>Multi-user XL-MIMO</b>: Uses a random-field model to derive MI expressions under multi-user
+  interference and varying noise, quantifying the effects of discrete sampling and noise power on performance.</li>
+            <li><b>CAP-MIMO (non-paraxial)</b>: Derives tractable MI formulas via dyadic Green’s functions and shows how
+  azimuth, sampling density, and receiver motion govern capacity and MI statistics.</li>
+          </ul>
+        </section>
+
+
+        <section id="education" class="card">
+          <h2>🎓 Education</h2>
+
+          <style>
+            .edu{list-style:none;margin:0;padding:0}
+            .edu .row{display:grid;grid-template-columns:100px 1fr;column-gap:12px;align-items:start;margin-bottom:6px}
+            .edu .year{color:#6b7280}
+            .edu .desc{overflow-wrap:anywhere}
+          </style>
+
+          <ul class="edu">
+            <li class="row">
+              <span class="year">2026–now</span>
+              <span class="desc">
+                <b>University of Massachusetts Amherst</b> — Ph.D. in Electrical and Computer Engineering, Advisor:
+  Prof. Jun Yao (incoming).
+              </span>
+            </li>
+            <li class="row">
+              <span class="year">2021–2025</span>
+              <span class="desc">
+                <b>Beijing Jiaotong University</b> — B.S. in Communication Engineering, <i>Jun 2025</i>.
+              </span>
+            </li>
+          </ul>
+        </section>
+
+
+
+
+        <section id="honors" class="card">
+          <h2>🏅 Honors and Awards</h2>
+        <style>
+        .awards{list-style:none;margin:0;padding:0}
+        .award{display:grid;grid-template-columns:56px 1fr;column-gap:12px;align-items:start;margin-bottom:6px}
+        .award .year{color:#6b7280}
+        .award .desc{overflow-wrap:anywhere}
+        </style>
+
+        <ul class="awards">
+          <li class="award">
+            <span class="year">2024</span>
+            <span class="desc"><strong>National-level Grant</strong>, BJTU Undergraduate Innovation &amp;
+  Entrepreneurship Program — School of Electronic and Information Engineering: <strong>1st place</strong>; nominated to
+  the <strong>18th National Undergraduate Innovation &amp; Entrepreneurship Annual Conference</strong> (Paper Track,
+  2025, pending).</span>
+          </li>
+          <li class="award">
+            <span class="year">2024</span>
+            <span class="desc"><strong>Silver Award</strong>, “Challenge Cup” Undergraduate Entrepreneurship Training
+  Project, Beijing Jiaotong University.</span>
+          </li>
         </ul>
         </section>
 
-      <section id="Previous research" class="card">
-        <h2>Previous research</h2>
-        <h3>🚗 Virtualized Platform-Based 5G Network Planning and Design (Graduation Project)</h3>
+        <section id="publications" class="card">
+          <h2>📄 Publications</h2>
+          <ol class="pubs">
+            <li>
+              Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Bokai Xu, Jiayi Zhang, Huahua Xiao, Wei E. I. Sha,
+  Bo Ai.
+              <i>Performance Analysis of Non-Paraxial Deployments: Continuous Aperture MIMO for Electromagnetic
+  Information Theory</i>.
+              <b>Electromagnetic Science</b>,
+              <span style="opacity:.8;"> Accepted, 2025 (to appear)</span>
+              · <em>Co-first author; † equal contribution</em>
+              · <a href="/assets/papers/CAPMIMO_NonParaxial_2025.pdf" target="_blank" rel="noopener">PDF</a>
+            </li>
+
+            <li>
+              Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Zhe Wang, Bokai Xu, Huahua Xiao.
+              <i>Research on Mutual Information for Multi-user Extremely Large-scale MIMO Systems Based on
+  Electromagnetic Information Theory</i>.
+              <b>Radio Communications Technology</b>, 2023.
+              <span style="opacity:.8;">Peking University Chinese Core (2023 edition)</span>
+              · <em>Co-first author; † equal contribution</em>
+              · <a href="https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2024&filename=WXDT20230
+  6007&uniplatform=OVERSEA&v=06hKALZo8pFC-6jlOEiobKKg9vebB5d-pc1WfoGtLJ3ZiImm_H0FwRxQ1xoTT0pW" target="_blank"
+  rel="noopener">CNKI</a>
+            </li>
+          </ol>
+        </section>
+
+
+
+        <section id="skills" class="card">
+          <h2>🛠 Skills</h2>
+          <p><b>Language</b>：Python, C &nbsp; | &nbsp; <b>Tools</b>：Matlab, Git/GitHub, LaTeX/Overleaf, Linux
+  shell</p>
+        </section>
+
+        <section id="about" class="card">
+          <h2>👋 About Me</h2>
           <ul>
-          <li>Leveraged the Lingte 5G virtual simulation platform and proposed an end-to-end network-planning framework for cross-regional connected-vehicle scenarios.</li>
-        </ul>
+            <li>Curious, open-minded, collaborative and friendly.</li>
+            <li><b>Hobbies</b>: 🎧 Music, 🧩 LEGO, 🏸 Badminton.</li>
+          </ul>
+        </section>
 
-        <h3>📡 Continuous Aperture MIMO for Electromagnetic Information Theory</h3>
-        <ul>
-          <li><b>Multi-user XL-MIMO</b>: Uses a random-field model to derive MI expressions under multi-user interference and varying noise, quantifying the effects of discrete sampling and noise power on performance;</li>
-          <li><b>CAP-MIMO (non-paraxial)</b>: Derives tractable MI formulas via dyadic Green’s functions and shows how azimuth, sampling density, and receiver motion govern capacity and MI statistics.</li>
-        </ul>
+        <footer class="footer">
+          © <span id="year"></span> zhouzhuoguo · <a href="mailto:zhouzhuoguo@gmail.com">zhouzhuoguo@gmail.com</a>
+        </footer>
       </section>
+    </main>
 
-
-      <section id="education" class="card">
-        <h2>🎓 Education</h2>
-
-        <style>
-          .edu{list-style:none;margin:0;padding:0}
-          .edu .row{display:grid;grid-template-columns:100px 1fr;column-gap:12px;align-items:start}
-          .edu .year{color:#6b7280}
-          .edu .desc{overflow-wrap:anywhere}
-        </style>
-
-        <ul class="edu">
-          <li class="row">
-            <span class="year">2021–2025</span>
-            <span class="desc">
-              <b>Beijing Jiaotong University</b> — B.S. in Communication Engineering, <i>Jun 2025</i>.
-            </span>
-          </li>
-        </ul>
-      </section>
-
-
-
-
-      <section id="honors" class="card">
-        <h2>🏅 Honors and Awards</h2>
-      <style>
-      .awards{list-style:none;margin:0;padding:0}
-      .award{display:grid;grid-template-columns:56px 1fr;column-gap:12px;align-items:start}
-      .award .year{color:#6b7280}
-      .award .desc{overflow-wrap:anywhere}
-      </style>
-
-      <ul class="awards">
-        <li class="award">
-          <span class="year">2024</span>
-          <span class="desc"><strong>National-level Grant</strong>, BJTU Undergraduate Innovation & Entrepreneurship Program — School of Electronic and Information Engineering: <strong>1st place</strong>; nominated to the <strong>18th National Undergraduate Innovation & Entrepreneurship Annual Conference</strong> (Paper Track, 2025, pending).</span>
-        </li>
-        <li class="award">
-          <span class="year">2024</span>
-          <span class="desc"><strong>Silver Award</strong>, “Challenge Cup” Undergraduate Entrepreneurship Training Project, Beijing Jiaotong University.</span>
-        </li>
-      </ul>
-      </section>
-
-      <section id="publications" class="card">
-        <h2>📄 Publications</h2>
-        <ol class="pubs">
-          <li>
-            <b>Zhouzhuo Guo</b>, Changchun Zhou.
-            <i>Horologium：A Scalable Cycle-Accurate Modeling Framework for AI Accelerators</i>.
-            <span style="opacity:.8;">In preparation </span>
-          </li>
-
-
-
-          
-          <li>
-            Yuzhou Wu, Yifan Xiong, <b>Zhouzhuo Guo</b>, Changchun Zhou.
-            <i>CrimNet: Two-Stage Crime Detection Networks Enhanced by Auxiliary Heads</i>.
-            <span style="opacity:.8;">submitted, 2025 </span>
-            · <a href="/assets/papers/22721_CrimNet_Two_Stage_Crime__Paper Submission.pdf" target="_blank" rel="noopener">PDF</a>
-          </li>
-
-          <li>
-            Yuzhou Wu, Yifan Xiong, <b>Zhouzhuo Guo</b>, Yuntian Liu, Changchun Zhou.
-            <i>KV-PT: Key-Value Cache Enhanced Point Transformer for 4D Space Analysis</i>.
-            <span style="opacity:.8;">submitted, 2025 </span>
-            · <a href="/assets/papers/18766_KV_PT_Key_Value_Cache_En_Paper Submission.pdf" target="_blank" rel="noopener">PDF</a>
-          </li>
-
-
-          <li>
-            Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Bokai Xu, Jiayi Zhang, Huahua Xiao, Wei E. I. Sha, Bo Ai.
-            <i>Performance Analysis of Non-Paraxial Deployments: Continuous Aperture MIMO for Electromagnetic Information Theory</i>.
-            <b>Electromagnetic Science</b>,
-            <span style="opacity:.8;"> Accepted, 2025 (to appear)</span>
-            · <em>Co-first author; † equal contribution</em>
-            · <a href="/assets/papers/CAPMIMO_NonParaxial_2025.pdf" target="_blank" rel="noopener">PDF</a>
-
-          </li>
-
-
-
-          
-          <li>
-            Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Zhe Wang, Bokai Xu, Huahua Xiao.
-            <i>Research on Mutual Information for Multi-user Extremely Large-scale MIMO Systems Based on Electromagnetic Information Theory</i>.
-            <b>Radio Communications Technology</b>, 2023.
-            <span style="opacity:.8;">Peking University Chinese Core (2023 edition)</span>
-            · <em>Co-first author; † equal contribution</em>
-            · <a href="https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2024&filename=WXDT202306007&uniplatform=OVERSEA&v=06hKALZo8pFC-6jlOEiobKKg9vebB5d-pc1WfoGtLJ3ZiImm_H0FwRxQ1xoTT0pW" target="_blank" rel="noopener">CNKI</a>
-            <div style="font-size:0.9em;opacity:.8;margin-top:2px;"></div>
-          </li>
-          <li>……</li>
-        </ol>
-      </section>
-
-
-
-      <section id="skills" class="card">
-        <h2>🛠 Skills</h2>
-        <p><b>Language</b>：Python, C, Verilog &nbsp; | &nbsp; <b>Tools</b>：Matlab, Git/GitHub, LaTeX/Overleaf, Linux shell</p>
-      </section>
-
-      <section id="about" class="card">
-        <h2>👋 About Me</h2>
-        <li>Curious, open-minded, collaborative and friendly.</li>
-        <li><b>Hobbies</b>: 🎧Music, 🧩LEGO, 🏸Badminton.</li>
-      </section>
-
-      <footer class="footer">
-        © <span id="year"></span> zhouzhuoguo · <a href="mailto:zhouzhuoguo@gmail.com">zhouzhuoguo@gmail.com</a>
-      </footer>
-    </section>
-  </main>
-
-  <script>
-    // 年份自动更新
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+    <script>
+      // 年份自动更新
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+  </html>
