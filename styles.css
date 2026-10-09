@@ -185,3 +185,56 @@ li > ul {
   .chip-gallery { grid-template-columns: 1fr; }
   .chip-figure img { height: auto; max-height: 340px; }
 }
+
+/* Academic homepage refinement */
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body { line-height: 1.65; }
+.navwrap { gap: 5px 9px; }
+.navwrap a { font-size: 13px; white-space: nowrap; }
+.navwrap .brand { font-size: 15px; margin-right: auto; }
+.page { grid-template-columns: minmax(240px,270px) minmax(0,1fr); gap: 22px; padding-top: 28px; }
+.sidebar { top: 76px; }
+.content { min-width: 0; gap: 18px; }
+.card { padding: 24px 28px; scroll-margin-top: 85px; }
+.card h2 { font-size: 21px; letter-spacing: -.02em; margin-bottom: 14px; }
+.card h3 { font-size: 16px; margin: 19px 0 6px; line-height: 1.45; }
+.card h4 { font-size: 15px; font-weight: 650; margin: 14px 0 5px; }
+.card p { margin: 9px 0; }
+.card ul { margin-top: 8px; padding-left: 20px; }
+.card li { margin-bottom: 5px; }
+.card a { color: var(--brand); text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+.card a:focus-visible, .quicknav a:focus-visible, .navwrap a:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
+.intro p { margin: 0; }
+.project-group-title { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 26px !important; }
+.pubs { padding-left: 22px; }
+.pubs li { margin-bottom: 18px; line-height: 1.75; }
+.pubs li:last-child { margin-bottom: 0; }
+.timeline li { grid-template-columns: 110px minmax(0,1fr); gap: 12px; padding: 10px 0; }
+.timeline .time { font-size: 14px; white-space: nowrap; }
+.chip-figure a:hover { border-color: var(--brand); }
+.chip-figure img { transition: transform .18s ease; }
+.chip-figure a:hover img { transform: scale(1.015); }
+@media (max-width: 960px) {
+  .page { grid-template-columns: 1fr; }
+  .sidebar { position: static; }
+  .navwrap .brand { margin-right: 12px; }
+  .quicknav { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 600px) {
+  .page { padding: 14px 12px; gap: 14px; }
+  .navwrap { padding: 8px 12px; gap: 4px; }
+  .navwrap a { font-size: 12px; padding: 5px 6px; }
+  .navwrap .brand { width: 100%; }
+  .card { padding: 19px 17px; border-radius: 13px; }
+  .sidebar { padding: 16px; }
+  .quicknav { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .timeline li { grid-template-columns: 1fr; gap: 2px; }
+  .edu .row { grid-template-columns: 90px minmax(0,1fr); }
+  .chip-gallery { gap: 18px; }
+  .chip-figure img { max-height: 380px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .chip-figure img { transition: none; }
+}
