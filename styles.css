@@ -153,3 +153,35 @@ li > ul {
 }
 
 }
+
+/* Chip layout gallery */
+.chip-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 14px 0 18px;
+}
+.chip-figure { margin: 0; min-width: 0; }
+.chip-figure a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f8fafc;
+}
+.chip-figure img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+.chip-figure figcaption {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+}
+@media (max-width: 620px) {
+  .chip-gallery { grid-template-columns: 1fr; }
+  .chip-figure img { height: auto; max-height: 340px; }
+}
