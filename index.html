@@ -8,21 +8,22 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Zhouzhuo Guo | Homepage">
     <meta property="og:description" content="Ph.D. student at UMass Amherst. Bioelectronics, physiological sensing, and emerging AI applications.">
-    <meta property="og:image" content="assets/og.png">
-    <link rel="icon" href="assets/favicon.ico">
+    <meta property="og:image" content="https://zhouzhuoguo.github.io/assets/photo.jpg">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header class="topnav">
-      <nav class="navwrap">
-        <a class="brand" href="#home">Homepage</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#honors">Honors and Awards</a>
+      <nav class="navwrap" aria-label="Main navigation">
+        <a class="brand" href="#home">Zhouzhuo Guo</a>
+        <a href="#tracks">Research</a>
         <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#honors">Honors</a>
         <a href="#skills">Skills</a>
-        <a href="#about">About Me</a>
+        <a href="#about">About</a>
       </nav>
     </header>
 
@@ -34,17 +35,15 @@
         <div class="affil">Ph.D. Student, Electrical and Computer Engineering<br>University of Massachusetts Amherst</div>
 
         <ul class="links">
-          <li>Email: zhouzhuoguo@gmail.com </li>
-          <li><a href="https://github.com/zhouzhuoguo" target="_blank" rel="noopener">Github</a></li>
+          <li><a href="mailto:zhouzhuoguo@gmail.com">zhouzhuoguo@gmail.com</a></li>
+          <li><a href="https://github.com/zhouzhuoguo" target="_blank" rel="noopener">GitHub</a></li>
         </ul>
 
-        <div class="quicknav">
+        <div class="quicknav" aria-label="Quick links">
           <a href="#tracks">Research Interests</a>
-          <a href="#education">Education</a>
-          <a href="#projects">Projects</a>
-          <a href="#experience">Experience</a>
-          <a href="#honors">Honors</a>
           <a href="#publications">Publications</a>
+          <a href="#projects">Selected Projects</a>
+          <a href="/cv.pdf" target="_blank" rel="noopener">Curriculum Vitae (PDF)</a>
         </div>
       </aside>
 
@@ -54,7 +53,7 @@
           <p>
             I received my B.S. in Communication Engineering from the School of Electronic and Information
             Engineering, Beijing Jiaotong University in June 2025. I am currently a
-            <b>first-year Ph.D. student in Electrical and Computer Engineering</b> at the
+            <b>Ph.D. student in Electrical and Computer Engineering</b> at the
             <b>University of Massachusetts Amherst</b>, advised by <b><a href="https://www.umass.edu/engineering/about/directory/jun-yao" target="_blank" rel="noopener">Prof. Jun Yao</a></b>.
             My current research interests center on <b>bioelectronics and physiological sensing</b>,
             with an initial focus on mesh-based bioelectronic interfaces. I am also exploring
@@ -79,6 +78,33 @@
           <ul>
             <li>Broader interests in energy-efficient circuits, hardware-aware computing, and on-device sensing.</li>
           </ul>
+        </section>
+
+        <section id="publications" class="card">
+          <h2>📄 Publications</h2>
+          <ol class="pubs">
+            <li>
+              Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Bokai Xu, Jiayi Zhang, Huahua Xiao, Wei E. I. Sha,
+  Bo Ai.
+              <i>Performance Analysis of Non-paraxial Deployments Continuous Aperture MIMO for Electromagnetic
+  Information Theory</i>.
+              <b>Electromagnetic Science</b>, vol. 4, no. 2, article no. 0140222, 2026.
+              · <em>Co-first author; † equal contribution</em>
+              · <a href="https://doi.org/10.23919/emsci.2025.0022" target="_blank" rel="noopener">DOI</a>
+              · <a href="/assets/papers/CAPMIMO_NonParaxial_2025.pdf" target="_blank" rel="noopener">PDF</a>
+            </li>
+
+            <li>
+              Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Zhe Wang, Bokai Xu, Huahua Xiao.
+              <i>Research on Mutual Information for Multi-user Extremely Large-scale MIMO Systems Based on
+  Electromagnetic Information Theory</i>.
+              <b>Radio Communications Technology</b>, 2023.
+              <span style="opacity:.8;">Peking University Chinese Core (2023 edition)</span>
+              · <em>Co-first author; † equal contribution</em>
+              · <a href="https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2024&filename=WXDT202306007&uniplatform=OVERSEA&v=06hKALZo8pFC-6jlOEiobKKg9vebB5d-pc1WfoGtLJ3ZiImm_H0FwRxQ1xoTT0pW" target="_blank"
+  rel="noopener">CNKI</a>
+            </li>
+          </ol>
         </section>
 
         <section id="projects" class="card">
@@ -111,14 +137,14 @@
               <figcaption>AI Accelerator — Chip Layout</figcaption>
             </figure>
           </div>
-          <h3>Earlier Academic Projects</h3>
-          <h3>🚗 Virtualized Platform-Based 5G Network Planning and Design (Graduation Project)</h3>
+          <h3 class="project-group-title">Earlier Academic Projects</h3>
+          <h4>Virtualized Platform-Based 5G Network Planning and Design (Graduation Project)</h4>
           <ul>
             <li>Leveraged the Lingte 5G virtual simulation platform and proposed an end-to-end network-planning
   framework for cross-regional connected-vehicle scenarios.</li>
           </ul>
 
-          <h3>📡 Continuous Aperture MIMO for Electromagnetic Information Theory</h3>
+          <h4>Continuous Aperture MIMO for Electromagnetic Information Theory</h4>
           <ul>
             <li><b>Multi-user XL-MIMO</b>: Uses a random-field model to derive MI expressions under multi-user
   interference and varying noise, quantifying the effects of discrete sampling and noise power on performance.</li>
@@ -189,7 +215,7 @@
             <span class="desc"><strong>National-level Grant</strong>, BJTU Undergraduate Innovation &amp;
   Entrepreneurship Program — School of Electronic and Information Engineering: <strong>1st place</strong>; nominated to
   the <strong>18th National Undergraduate Innovation &amp; Entrepreneurship Annual Conference</strong> (Paper Track,
-  2025, pending).</span>
+  2025).</span>
           </li>
           <li class="award">
             <span class="year">2024</span>
@@ -199,33 +225,7 @@
         </ul>
         </section>
 
-        <section id="publications" class="card">
-          <h2>📄 Publications</h2>
-          <ol class="pubs">
-            <li>
-              Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Bokai Xu, Jiayi Zhang, Huahua Xiao, Wei E. I. Sha,
-  Bo Ai.
-              <i>Performance Analysis of Non-paraxial Deployments Continuous Aperture MIMO for Electromagnetic
-  Information Theory</i>.
-              <b>Electromagnetic Science</b>, vol. 4, no. 2, article no. 0140222, 2026.
-              · <em>Co-first author; † equal contribution</em>
-              · <a href="https://doi.org/10.23919/emsci.2025.0022" target="_blank" rel="noopener">DOI</a>
-              · <a href="/assets/papers/CAPMIMO_NonParaxial_2025.pdf" target="_blank" rel="noopener">PDF</a>
-            </li>
 
-            <li>
-              Yin Zhang<sup>†</sup>, <b>Zhouzhuo Guo<sup>†</sup></b>, Zhe Wang, Bokai Xu, Huahua Xiao.
-              <i>Research on Mutual Information for Multi-user Extremely Large-scale MIMO Systems Based on
-  Electromagnetic Information Theory</i>.
-              <b>Radio Communications Technology</b>, 2023.
-              <span style="opacity:.8;">Peking University Chinese Core (2023 edition)</span>
-              · <em>Co-first author; † equal contribution</em>
-              · <a href="https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2024&filename=WXDT20230
-  6007&uniplatform=OVERSEA&v=06hKALZo8pFC-6jlOEiobKKg9vebB5d-pc1WfoGtLJ3ZiImm_H0FwRxQ1xoTT0pW" target="_blank"
-  rel="noopener">CNKI</a>
-            </li>
-          </ol>
-        </section>
 
 
 
